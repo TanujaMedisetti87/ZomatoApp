@@ -1,5 +1,5 @@
 const React = require('react');
-const {browserHistory, hashHistory} = require('react-router');
+const {browserHistory,hashHistory} = require('react-router');
 import { Button, Checkbox, Form, Card } from 'semantic-ui-react';
 const Login = React.createClass({
 getInitialState: function()
@@ -25,7 +25,9 @@ LoginUser: function()
    {
      console.log('res',JSON.stringify(res));
      if(res == 'success')
-     alert("Login success");
+     {
+       hashHistory.push('/home');
+    }
      else {
        alert("Invalid username or password");
      }
