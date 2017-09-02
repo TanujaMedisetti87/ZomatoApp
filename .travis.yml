@@ -1,0 +1,14 @@
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - "6.9.1"
+addons:
+  sonarcloud:
+    organization: "arunmohanraj471-github"
+    token:
+      secure: "ca4fc2500096a5c9387c07b8e5e0081cb063f763"
+script:
+  - sonar-scanner
+
+  
