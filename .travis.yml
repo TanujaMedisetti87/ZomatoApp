@@ -3,12 +3,5 @@ sudo: false
 language: node_js
 node_js:
   - "6.9.1"
-addons:
-  sonarcloud:
-    organization: "arunmohanraj471-github"
-    token:
-      secure: "e0ff64f3f7a600bc11a0a87973484b5a012cb97de0ff64f3f7a600bc11a0a87973484b5a012cb97d"
-script:
-  - sonar-scanner
 
   
